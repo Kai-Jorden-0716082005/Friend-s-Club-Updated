@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Annual Event Calendar</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .max-w-7xl{
-        padding-top: 1rem;
+    .max-w-7xl {
+      padding-top: 1rem;
     }
   </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800">
 
   <!-- Header with Responsive Banner -->
   <header class="bg-blue-600 text-white pb-6 shadow-md">
     <div class="max-w-7xl mx-auto px-4 text-center">
       <div class="overflow-hidden rounded-xl mb-4">
-        <img src="WhatsAppImage2025-06-06at12.08.33PM.jpeg"
-             alt="Banner"
-             class="w-full h-auto max-h-[50vh] object-cover" />
+        <img src="WhatsAppImage2025-06-06at12.08.33PM.jpeg" alt="Banner"
+          class="w-full h-auto max-h-[50vh] object-cover" />
       </div>
       <h1 class="text-3xl font-bold">ANNUAL EVENT CALENDAR</h1>
       <p class="text-sm mt-1">June 2025 – August 2026</p>
       <p class="text-sm">Friends' Club – Laheriasarai, Darbhanga</p>
     </div>
+
+    <!-- Subheader with Contacts and Address -->
+    <section class="bg-transparent py-6">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center sm:items-start gap-6">
+
+        <!-- Square Photo -->
+        <div class="w-40 h-40 bg-gray-100 rounded-xl overflow-hidden">
+          <a href="https://maps.app.goo.gl/Zpbgoa5Th3Z3rstn6"><img src="map.jpeg" alt="Group Photo" class="w-full h-full object-cover" /></a>
+        </div>
+
+        <!-- Contact and Address Info -->
+        <div class="flex-1">
+          <!-- Contacts -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-800 mb-4">
+            <div>
+              <p class="font-bold">Secretary :-  Lekhraj </p>
+              <p>Contact no.:- <a href="tel:+91 6205157346" class="font-semibold">+91 6205157346</a></p>
+            </div>
+            <div>
+              <p class="font-bold">Treasurer:- Ritesh Kumar</p>
+              <p>Contact no.:- <a href="tel:+91 70503 89862" class="font-semibold">+91 70503 89862</a></p>
+            </div>
+            <div>
+              <p class="font-bold">Librarian:- Alok Kumar Singh</p>
+              <p>Contact no.:- <a href="tel:+91 76676 83798" class="font-semibold">+91 76676 83798</a></p>
+            </div>
+          </div>
+
+          <!-- Venue Address -->
+          <p class="text-sm text-600"><span class="font-bold">Venue:</span> <a href="https://maps.app.goo.gl/Zpbgoa5Th3Z3rstn6">Arya samaj mandir , near Satish timber wood , Balbhadrapur , Laheriasarai, Darbhanga</a></p>
+        </div>
+      </div>
+    </section>
   </header>
+
 
   <!-- Main Content -->
   <main class="max-w-7xl mx-auto px-4 py-10">
@@ -39,177 +74,177 @@
   </footer>
 
   <script>
-     const events = {
-  "June 2025": [
-    "01 (Sunday): Sunday Session",
-    "05 (Thursday): Thursday Session",
-    "08 (Sunday): Sunday Session",
-    "12 (Thursday): Thursday Session",
-    "15 (Sunday): Sunday Session",
-    "19 (Thursday): Thursday Session",
-    "22 (Sunday): Sunday Session",
-    "26 (Thursday): Thursday Session",
-    "<b>29 (Sunday): Mega Quiz</b>"
-  ],
-  "July 2025": [
-    "03 (Thursday): Thursday Session",
-    "06 (Sunday): Sunday Session",
-    "10 (Thursday): Thursday Session",
-    "13 (Sunday): Sunday Session",
-    "17 (Thursday): Thursday Session",
-    "20 (Sunday): Sunday Session",
-    "24 (Thursday): Thursday Session",
-    "<b>27 (Sunday): Mega Quiz</b>",
-    "31 (Thursday): Thursday Session"
-  ],
-  "August 2025": [
-    "03 (Sunday): Sunday Session",
-    "07 (Thursday): Thursday Session",
-    "10 (Sunday): Sunday Session",
-    "14 (Thursday): Thursday Session",
-    "<b>15 (Friday): Independence Day</b>",
-    "17 (Sunday): Sunday Session",
-    "21 (Thursday): Thursday Session",
-    "24 (Sunday): Sunday Session",
-    "28 (Thursday): Thursday Session",
-    "<b>31 (Sunday): Mastermind</b>"
-  ],
-  "September 2025": [
-    "04 (Thursday): Thursday Session",
-    "07 (Sunday): Sunday Session",
-    "11 (Thursday): Thursday Session",
-    "14 (Sunday): Sunday Session",
-    "18 (Thursday): Thursday Session",
-    "21 (Sunday): Sunday Session",
-    "25 (Thursday): Thursday Session",
-    "<b>28 (Sunday): Mega Quiz</b>"
-  ],
-  "October 2025": [
-    "<b>02 (Thursday): Cleaning Program</b>",
-    "05 (Sunday): Sunday Session",
-    "09 (Thursday): Thursday Session",
-    "12 (Sunday): Sunday Session",
-    "16 (Thursday): Thursday Session",
-    "19 (Sunday): Sunday Session",
-    "<b>20 (Monday): Diwali Celebration</b>",
-    "23 (Thursday): Thursday Session",
-    "<b>26 (Sunday): Mega Quiz</b>",
-    "30 (Thursday): Thursday Session"
-  ],
-  "November 2025": [
-    "02 (Sunday): Sunday Session",
-    "06 (Thursday): Thursday Session",
-    "09 (Sunday): Sunday Session",
-    "13 (Thursday): Thursday Session",
-    "16 (Sunday): Sunday Session",
-    "20 (Thursday): Thursday Session",
-    "23 (Sunday): Sunday Session",
-    "27 (Thursday): Thursday Session",
-    "<b>30 (Sunday): Mastermind</b>"
-  ],
-  "December 2025": [
-    "04 (Thursday): Thursday Session",
-    "07 (Sunday): Sunday Session",
-    "11 (Thursday): Thursday Session",
-    "14 (Sunday): Sunday Session",
-    "18 (Thursday): Thursday Session",
-    "21 (Sunday): Sunday Session",
-    "<b>24 (Wednesday): Secret Santa</b>",
-    "25 (Thursday): Thursday Session",
-    "<b>28 (Sunday): Mega Quiz</b>"
-  ],
-  "January 2026": [
-    "<b>01 (Thursday): New Year Get-Together</b>",
-    "04 (Sunday): Sunday Session",
-    "08 (Thursday): Thursday Session",
-    "11 (Sunday): Sunday Session",
-    "15 (Thursday): Thursday Session",
-    "18 (Sunday): Sunday Session",
-    "22 (Thursday): Thursday Session",
-    "<b>23 (Friday): Vasant Panchami</b>",
-    "<b>25 (Sunday): Mega Quiz</b>",
-    "<b>26 (Monday): Republic Day</b>",
-    "29 (Thursday): Thursday Session"
-  ],
-  "February 2026": [
-    "01 (Sunday): Sunday Session",
-    "05 (Thursday): Thursday Session",
-    "08 (Sunday): Sunday Session",
-    "12 (Thursday): Thursday Session",
-    "15 (Sunday): Sunday Session",
-    "19 (Thursday): Thursday Session",
-    "22 (Sunday): Sunday Session",
-    "26 (Thursday): Thursday Session",
-    "<b>29 (Sunday): Mastermind</b>"
-  ],
-  "March 2026": [
-    "01 (Sunday): Sunday Session",
-    "<b>04 (Wednesday): Holi Meet</b>",
-    "05 (Thursday): Thursday Session",
-    "08 (Sunday): Sunday Session",
-    "12 (Thursday): Thursday Session",
-    "15 (Sunday): Sunday Session",
-    "19 (Thursday): Thursday Session",
-    "22 (Sunday): Sunday Session",
-    "26 (Thursday): Thursday Session",
-    "<b>29 (Sunday): Mega Quiz</b>"
-  ],
-  "April 2026": [
-    "02 (Thursday): Thursday Session",
-    "05 (Sunday): Sunday Session",
-    "09 (Thursday): Thursday Session",
-    "12 (Sunday): Sunday Session",
-    "16 (Thursday): Thursday Session",
-    "19 (Sunday): Sunday Session",
-    "23 (Thursday): Thursday Session",
-    "<b>26 (Sunday): Mega Quiz</b>",
-    "30 (Thursday): Thursday Session"
-  ],
-  "May 2026": [
-    "03 (Sunday): Sunday Session",
-    "07 (Thursday): Thursday Session",
-    "10 (Sunday): Sunday Session",
-    "14 (Thursday): Thursday Session",
-    "17 (Sunday): Sunday Session",
-    "21 (Thursday): Thursday Session",
-    "24 (Sunday): Sunday Session",
-    "28 (Thursday): Thursday Session",
-    "<b>31 (Sunday): Mastermind</b>"
-  ],
-  "June 2026": [
-    "04 (Thursday): Thursday Session",
-    "07 (Sunday): Sunday Session",
-    "11 (Thursday): Thursday Session",
-    "14 (Sunday): Sunday Session",
-    "18 (Thursday): Thursday Session",
-    "21 (Sunday): Sunday Session",
-    "25 (Thursday): Thursday Session",
-    "<b>28 (Sunday): Mega Quiz</b>"
-  ],
-  "July 2026": [
-    "02 (Thursday): Thursday Session",
-    "05 (Sunday): Sunday Session",
-    "09 (Thursday): Thursday Session",
-    "12 (Sunday): Sunday Session",
-    "16 (Thursday): Thursday Session",
-    "19 (Sunday): Sunday Session",
-    "23 (Thursday): Thursday Session",
-    "<b>26 (Sunday): Mega Quiz</b>",
-    "30 (Thursday): Thursday Session"
-  ],
-  "August 2026": [
-    "02 (Sunday): Sunday Session",
-    "06 (Thursday): Thursday Session",
-    "09 (Sunday): Sunday Session",
-    "13 (Thursday): Thursday Session",
-    "<b>15 (Saturday): Independence Day</b>",
-    "16 (Sunday): Sunday Session",
-    "20 (Thursday): Thursday Session",
-    "23 (Sunday): Sunday Session",
-    "27 (Thursday): Thursday Session",
-    "<b>30 (Sunday): Mastermind</b>"
-  ]
-};
+    const events = {
+      "June 2025": [
+        "01 (Sunday): Sunday Session",
+        "05 (Thursday): Thursday Session",
+        "08 (Sunday): Sunday Session",
+        "12 (Thursday): Thursday Session",
+        "15 (Sunday): Sunday Session",
+        "19 (Thursday): Thursday Session",
+        "22 (Sunday): Sunday Session",
+        "26 (Thursday): Thursday Session",
+        "<b>29 (Sunday): Mega Quiz</b>"
+      ],
+      "July 2025": [
+        "03 (Thursday): Thursday Session",
+        "06 (Sunday): Sunday Session",
+        "10 (Thursday): Thursday Session",
+        "13 (Sunday): Sunday Session",
+        "17 (Thursday): Thursday Session",
+        "20 (Sunday): Sunday Session",
+        "24 (Thursday): Thursday Session",
+        "<b>27 (Sunday): Mega Quiz</b>",
+        "31 (Thursday): Thursday Session"
+      ],
+      "August 2025": [
+        "03 (Sunday): Sunday Session",
+        "07 (Thursday): Thursday Session",
+        "10 (Sunday): Sunday Session",
+        "14 (Thursday): Thursday Session",
+        "<b>15 (Friday): Independence Day</b>",
+        "17 (Sunday): Sunday Session",
+        "21 (Thursday): Thursday Session",
+        "24 (Sunday): Sunday Session",
+        "28 (Thursday): Thursday Session",
+        "<b>31 (Sunday): Mastermind</b>"
+      ],
+      "September 2025": [
+        "04 (Thursday): Thursday Session",
+        "07 (Sunday): Sunday Session",
+        "11 (Thursday): Thursday Session",
+        "14 (Sunday): Sunday Session",
+        "18 (Thursday): Thursday Session",
+        "21 (Sunday): Sunday Session",
+        "25 (Thursday): Thursday Session",
+        "<b>28 (Sunday): Mega Quiz</b>"
+      ],
+      "October 2025": [
+        "<b>02 (Thursday): Cleaning Program</b>",
+        "05 (Sunday): Sunday Session",
+        "09 (Thursday): Thursday Session",
+        "12 (Sunday): Sunday Session",
+        "16 (Thursday): Thursday Session",
+        "19 (Sunday): Sunday Session",
+        "<b>20 (Monday): Diwali Celebration</b>",
+        "23 (Thursday): Thursday Session",
+        "<b>26 (Sunday): Mega Quiz</b>",
+        "30 (Thursday): Thursday Session"
+      ],
+      "November 2025": [
+        "02 (Sunday): Sunday Session",
+        "06 (Thursday): Thursday Session",
+        "09 (Sunday): Sunday Session",
+        "13 (Thursday): Thursday Session",
+        "16 (Sunday): Sunday Session",
+        "20 (Thursday): Thursday Session",
+        "23 (Sunday): Sunday Session",
+        "27 (Thursday): Thursday Session",
+        "<b>30 (Sunday): Mastermind</b>"
+      ],
+      "December 2025": [
+        "04 (Thursday): Thursday Session",
+        "07 (Sunday): Sunday Session",
+        "11 (Thursday): Thursday Session",
+        "14 (Sunday): Sunday Session",
+        "18 (Thursday): Thursday Session",
+        "21 (Sunday): Sunday Session",
+        "<b>24 (Wednesday): Secret Santa</b>",
+        "25 (Thursday): Thursday Session",
+        "<b>28 (Sunday): Mega Quiz</b>"
+      ],
+      "January 2026": [
+        "<b>01 (Thursday): New Year Get-Together</b>",
+        "04 (Sunday): Sunday Session",
+        "08 (Thursday): Thursday Session",
+        "11 (Sunday): Sunday Session",
+        "15 (Thursday): Thursday Session",
+        "18 (Sunday): Sunday Session",
+        "22 (Thursday): Thursday Session",
+        "<b>23 (Friday): Vasant Panchami</b>",
+        "<b>25 (Sunday): Mega Quiz</b>",
+        "<b>26 (Monday): Republic Day</b>",
+        "29 (Thursday): Thursday Session"
+      ],
+      "February 2026": [
+        "01 (Sunday): Sunday Session",
+        "05 (Thursday): Thursday Session",
+        "08 (Sunday): Sunday Session",
+        "12 (Thursday): Thursday Session",
+        "15 (Sunday): Sunday Session",
+        "19 (Thursday): Thursday Session",
+        "22 (Sunday): Sunday Session",
+        "26 (Thursday): Thursday Session",
+        "<b>29 (Sunday): Mastermind</b>"
+      ],
+      "March 2026": [
+        "01 (Sunday): Sunday Session",
+        "<b>04 (Wednesday): Holi Meet</b>",
+        "05 (Thursday): Thursday Session",
+        "08 (Sunday): Sunday Session",
+        "12 (Thursday): Thursday Session",
+        "15 (Sunday): Sunday Session",
+        "19 (Thursday): Thursday Session",
+        "22 (Sunday): Sunday Session",
+        "26 (Thursday): Thursday Session",
+        "<b>29 (Sunday): Mega Quiz</b>"
+      ],
+      "April 2026": [
+        "02 (Thursday): Thursday Session",
+        "05 (Sunday): Sunday Session",
+        "09 (Thursday): Thursday Session",
+        "12 (Sunday): Sunday Session",
+        "16 (Thursday): Thursday Session",
+        "19 (Sunday): Sunday Session",
+        "23 (Thursday): Thursday Session",
+        "<b>26 (Sunday): Mega Quiz</b>",
+        "30 (Thursday): Thursday Session"
+      ],
+      "May 2026": [
+        "03 (Sunday): Sunday Session",
+        "07 (Thursday): Thursday Session",
+        "10 (Sunday): Sunday Session",
+        "14 (Thursday): Thursday Session",
+        "17 (Sunday): Sunday Session",
+        "21 (Thursday): Thursday Session",
+        "24 (Sunday): Sunday Session",
+        "28 (Thursday): Thursday Session",
+        "<b>31 (Sunday): Mastermind</b>"
+      ],
+      "June 2026": [
+        "04 (Thursday): Thursday Session",
+        "07 (Sunday): Sunday Session",
+        "11 (Thursday): Thursday Session",
+        "14 (Sunday): Sunday Session",
+        "18 (Thursday): Thursday Session",
+        "21 (Sunday): Sunday Session",
+        "25 (Thursday): Thursday Session",
+        "<b>28 (Sunday): Mega Quiz</b>"
+      ],
+      "July 2026": [
+        "02 (Thursday): Thursday Session",
+        "05 (Sunday): Sunday Session",
+        "09 (Thursday): Thursday Session",
+        "12 (Sunday): Sunday Session",
+        "16 (Thursday): Thursday Session",
+        "19 (Sunday): Sunday Session",
+        "23 (Thursday): Thursday Session",
+        "<b>26 (Sunday): Mega Quiz</b>",
+        "30 (Thursday): Thursday Session"
+      ],
+      "August 2026": [
+        "02 (Sunday): Sunday Session",
+        "06 (Thursday): Thursday Session",
+        "09 (Sunday): Sunday Session",
+        "13 (Thursday): Thursday Session",
+        "<b>15 (Saturday): Independence Day</b>",
+        "16 (Sunday): Sunday Session",
+        "20 (Thursday): Thursday Session",
+        "23 (Sunday): Sunday Session",
+        "27 (Thursday): Thursday Session",
+        "<b>30 (Sunday): Mastermind</b>"
+      ]
+    };
 
 
     const container = document.querySelector("main > div");
@@ -256,4 +291,5 @@
   </script>
 
 </body>
+
 </html>
